@@ -8,16 +8,18 @@ Provides a frontend for accessing public data, either as API or as more complex 
 
 
 
-Getting started
-===============
+Installation
+============
 
-- Install mongodb
-- Install pymongo
-
+(on linux)
+$ sudo apt-get install mongodb
+$ pip install -r requirments.txt
 $ python run.py
 
 - Use the sadna-data project to load data from standard files into the DB 
 
+Samples
+=======
 - Go to "http://api.yeda.us/data/gov/knesset/mks"
 - Go to "http://api.yeda.us/data/gov/knesset/mks?o=html"
 - Go to "http://api.yeda.us/data/gov/knesset/mks?o=csv"

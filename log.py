@@ -6,7 +6,8 @@ from logging.handlers import RotatingFileHandler, TimedRotatingFileHandler
 logger=logging.getLogger()
 
 sh = logging.StreamHandler(sys.stdout)
-fh = RotatingFileHandler("/home/adam/Projects/dbserver/logs/dbserver", maxBytes = 1000000, backupCount = 30)
+# TODO: make the log file location configurable
+fh = RotatingFileHandler("db.log", maxBytes = 1000000, backupCount = 30)
 
 formatter = logging.Formatter("%(asctime)s:%(name)s:%(levelname)s:%(message)s")
 sh.setFormatter(formatter)
